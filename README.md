@@ -5,7 +5,7 @@
 * Logs, metrics, distributed tracing and OpenTelemetry
 * XAML-Clients mit WinUI, .NET MAUI, WPF, Uno Platform and Avalonia UI
 * YARP - Yeat Another Reverse Proxy
-* Mionimal APIs, Docker und Azure Container Apps mit .NET Aspire 
+* Minimal APIs, Docker und Azure Container Apps mit .NET Aspire 
 
 ## Be ready for C# 12
 
@@ -37,7 +37,7 @@ Donnerstag, 15. Februar 2024, 12:00-13:00, Gold III
 
 YARP ist ein Open Source Reverse Proxy, der von Microsoft entwickelt wird. Viele Funktionalitäten können von Services zu diesem Proxy ausgelagert werden. Transformation von Requests, ein Wechsel des Protokolls, Load Balancing, Rate Limiting, Authentication und Authorization und vieles mehr sind Features dieses Proxys. In dieser Session lernen Sie, wie Sie YARP in On-Premises- als auch in Cloud-Szenarien einsetzen können.
 
-## Mionimal APIs, Docker und Azure Container Apps mit .NET Aspire
+## Minimal APIs, Docker und Azure Container Apps mit .NET Aspire
 
 Freitag, 16. Februar 2024, 8:30 - 16:30, Basalt WS
 
