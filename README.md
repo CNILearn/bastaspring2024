@@ -2,7 +2,7 @@
 
 * Be ready for C# 12
 * HotChocolate: Ein Heißgetränk oder GraphQL-Backend mit .NET?
-* YARP - Yeat Another Reverse Proxy
+* YARP - Yet Another Reverse Proxy
 * Logs, metrics, distributed tracing and OpenTelemetry
 * XAML-Clients mit WinUI, .NET MAUI, WPF, Uno Platform and Avalonia UI
 * Minimal APIs, Docker und Azure Container Apps mit .NET Aspire 
@@ -23,7 +23,7 @@ Sebastian Szvetecz
 
 Alle Liebhaber:innen heißer Schokolade bzw. Kakao muss ich jetzt leider enttäuschen. HotChocolate ist in diesem Kontext kein Heißgetränk, sondern ein GraphQL-Backend für .NET-Entwickler:innen. GraphQL ist eine Abfragesprache für APIs, gilt als DER Gegner von REST und wird unter anderem von Facebook, GitHub und Pinterest verwendet. In dieser Session werden wir noch genauer aufarbeiten, was GraphQL ist und warum es ein würdiger Gegner von REST ist. Außerdem werden wir uns ansehen wie einfach man mit ASP.NET Core und HotChocolate ein GraphQL API umsetzen kann. Unser GraphQL API soll nicht nur mit Hilfe von Entity Framework Core auf eine Datenkbank zugreifen, sie soll dem Client auch ermöglichen, Daten zu filtern, zu sortieren und zu paginieren, um einen möglichst flexiblen Datenzugriff zu ermöglichen. Filtern, Sortieren und Paginieren – klingt aufwendig? Nein, nicht mit HotChocolate. Aber auch für fortgeschrittenere Szenarien wie z. B. langsame Teilabfragen ist man mit HotChocolate gerüstet.
 
-## YARP - Yeat Another Reverse Proxy
+## YARP - Yet Another Reverse Proxy
 
 Donnerstag, 15. Februar 2024, 12:00-13:00, Gold III
 
