@@ -1,0 +1,8 @@
+﻿namespace TemplateStudioWinUI.Behaviors;
+
+public enum NavigationViewHeaderMode
+{
+    Always,
+    Never,
+    Minimal
+}
