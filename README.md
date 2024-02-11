@@ -1,4 +1,4 @@
-# BASTA! Frankfurt 2023
+# BASTA! Frankfurt 2024
 
 * Be ready for C# 12
 * HotChocolate: Ein Heißgetränk oder GraphQL-Backend mit .NET?
@@ -74,6 +74,55 @@ Es gibt einen .NET-Backend-Service für eine Spiele-App. Dazu bauen wir Clients 
 
 ### XAML samples
 
+- ViewModels
+  - [Codebreaker Viewmodels](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.ViewModels)
+- WPF
+  - WPF with .NET Framework
+  - Upgrade assistant converted, C# updates
+  - Template Studio for WPF
+  - [Codbreaker WPF](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.WPF)
+- WinUI
+  - Template Studio for WinUI
+  - [Codebreaker WinUI](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.WinUI)
+- .NET MAUI
+  - .NET MAUI with MAUI Accelerator
+ - [Codebreaker MAUI](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.MAUI)
+- Uno Platform
+  - 
+  - [Codebreaker Uno](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.Uno)
+- Avalonia UI
+  - [Codebreaker Avalonia](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.Avalonia)
+
+### XAML Links
+
+- Common
+  - [Codebreaker XAML clients and shared view-models](https://github.com/CodebreakerApp/Codebreaker.Xaml)
+  - [Community Toolkit .NET](https://github.com/CommunityToolkit/dotnet)
+  - [Community Toolkit Labs](https://toolkitlabs.dev/)
+- WPF
+  - [WPF Repo](https://github.com/dotnet/wpf)
+  - [WPF .NET 9 Milestone](https://github.com/dotnet/wpf/milestone/38)
+- WinUI
+  - [WinUI Repo](https://github.com/microsoft/microsoft-ui-xaml)
+  - [Windows App SDK](https://github.com/microsoft/WindowsAppSDK)
+  - [Windows calculator](https://github.com/microsoft/calculator)
+  - [Windows Community Toolkit for WinUI and Uno](https://github.com/CommunityToolkit/Windows)
+- MAUI
+  - [MAUI Repo](https://github.com/dotnet/maui)
+  - [.NET MAUI Community Toolkit](https://github.com/CommunityToolkit/Maui)
+- Uno Platform
+  - [Uno Platform](https://platform.uno/)
+  - [Calculator](https://platform.uno/uno-calculator/)
+  - [GitHub Uno Platform](https://github.com/unoplatform/uno)
+  - [Uno Gallery](https://gallery.platform.uno/)
+  - [Uno Playground](https://playground.platform.uno)
+  - [Windows Community Toolkit for WinUI and Uno](https://github.com/CommunityToolkit/Windows)
+  - [Device APIs](https://aka.platform.uno/demo-unexpected-apis)
+  - [Views implemented with Uno](https://platform.uno/docs/articles/implemented-views.html)
+- Avalonia UI 
+  - [Avalonia UI](https://www.avaloniaui.net/)
+  - [Avalonia Playground](https://play.avaloniaui.net/)
+  - [Avalonia GitHub](https://github.com/AvaloniaUI/Avalonia)
 
 ## Minimal APIs, Docker und Azure Container Apps mit .NET Aspire
 
