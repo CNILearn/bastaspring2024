@@ -3,7 +3,7 @@ using BookSample.ReviewAPIClient.Models;
 
 namespace BookSample.GraphQL.GraphQL.DataLoader;
 
-public class ReviewBatchDataloader(ReviewsClient reviewsClient, IBatchScheduler batchScheduler, DataLoaderOptions? options = null) : BatchDataLoader<long, IEnumerable<Review>>(batchScheduler, options)
+public class ReviewBatchDataloader(ReviewClient reviewsClient, IBatchScheduler batchScheduler, DataLoaderOptions? options = null) : BatchDataLoader<long, IEnumerable<Review>>(batchScheduler, options)
 {
     private static readonly List<Review> s_emptyReviewList = [];
 

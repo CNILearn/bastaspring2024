@@ -20,9 +20,9 @@ public class BookExtensions
     //    await ratingBatchDataloader.LoadAsync(book.Id, cancellationToken);
 
     [DataLoader(AccessModifier = DataLoaderAccessModifier.PublicInterface)]
-    internal static async Task<IReadOnlyDictionary<long, Rating>> RatingById(IReadOnlyList<long> bookIds, ReviewsClient reviewsClient, CancellationToken cancellationToken)
+    internal static async Task<IReadOnlyDictionary<long, Rating>> RatingById(IReadOnlyList<long> bookIds, ReviewClient reviewClient, CancellationToken cancellationToken)
     {
-        var result = await reviewsClient.Api
+        var result = await reviewClient.Api
             .Ratings
             .GetAsync(x => x.QueryParameters.BookIds = bookIds.ToStrings(), cancellationToken);
 

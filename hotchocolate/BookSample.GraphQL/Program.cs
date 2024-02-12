@@ -22,7 +22,7 @@ builder.Services.AddTransient<IBookService, BookService>();
 builder.Services.AddTransient<IBookEventPublisher, BookSubscriptionSender>();
 
 builder.Services.AddTransient<IRequestAdapter>(_ => new HttpClientRequestAdapter(new AnonymousAuthenticationProvider()));
-builder.Services.AddTransient<ReviewsClient>();
+builder.Services.AddTransient<ReviewClient>();
 
 builder.Services
     .AddGraphQLServer()

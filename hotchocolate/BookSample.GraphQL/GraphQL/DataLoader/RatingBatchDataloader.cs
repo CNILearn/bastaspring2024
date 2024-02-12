@@ -3,7 +3,7 @@ using BookSample.ReviewAPIClient;
 
 namespace BookSample.GraphQL.GraphQL.DataLoader;
 
-public class RatingBatchDataloader(ReviewsClient reviewsClient, ILogger<RatingBatchDataloader> logger, IBatchScheduler batchScheduler, DataLoaderOptions? options = null) : BatchDataLoader<long, Rating>(batchScheduler, options)
+public class RatingBatchDataloader(ReviewClient reviewsClient, ILogger<RatingBatchDataloader> logger, IBatchScheduler batchScheduler, DataLoaderOptions? options = null) : BatchDataLoader<long, Rating>(batchScheduler, options)
 {
     private static readonly Dictionary<long, Rating> s_emptyRatingList = [];
 
