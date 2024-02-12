@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+	x:Class="MAUIAppAccelerator.AppShell"
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:views="clr-namespace:MAUIAppAccelerator.Views"
+	xmlns:local="clr-namespace:MAUIAppAccelerator">
+
+	<ShellContent
+		Shell.NavBarIsVisible="true"
+		Title="Main"
+		Icon="iconblank.png"
+		ContentTemplate="{DataTemplate views:MainPage}"
+		Route="MainPage" />
+	<ShellContent
+		Shell.NavBarIsVisible="true"
+		Title="ListDetail"
+		Icon="iconlistdetail.png"
+		ContentTemplate="{DataTemplate views:ListDetailPage}"
+		Route="ListDetailPage" />
+	<ShellContent
+		Shell.NavBarIsVisible="true"
+		Title="Drawing"
+		Icon="icondrawing.png"
+		ContentTemplate="{DataTemplate views:DrawingPage}"
+		Route="DrawingPage" />
+	<ShellContent
+		Shell.NavBarIsVisible="true"
+		Title="Map"
+		Icon="iconmap.png"
+		ContentTemplate="{DataTemplate views:MapPage}"
+		Route="MapPage" />
+	<ShellContent
+		Shell.NavBarIsVisible="true"
+		Title="MediaElement"
+		Icon="iconmediaelement.png"
+		ContentTemplate="{DataTemplate views:MediaElementPage}"
+		Route="MediaElementPage" />
+	<ShellContent
+		Shell.NavBarIsVisible="true"
+		Title="WebView"
+		Icon="iconwebview.png"
+		ContentTemplate="{DataTemplate views:WebViewPage}"
+		Route="WebViewPage" />
+	<ShellContent
+		Shell.NavBarIsVisible="true"
+		Title="Sample"
+		Icon="iconsample.png"
+		ContentTemplate="{DataTemplate views:SamplePage}"
+		Route="SamplePage" />
+	<ShellContent
+		Shell.NavBarIsVisible="true"
+		Title="Lottie"
+		Icon="iconlottie.png"
+		ContentTemplate="{DataTemplate views:LottiePage}"
+		Route="LottiePage" />
+</Shell>
