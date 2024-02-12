@@ -28,6 +28,12 @@ builder.Services
     .AddGraphQLServer()
     .AddInMemorySubscriptions()
     .InitializeOnStartup()
+    .ModifyOptions(options =>
+    {
+        options.EnableDefer = true;
+        // e.g. options.EnableStream = true;
+        // ...
+    })
     .SetPagingOptions(new()
     {
         IncludeTotalCount = true,
