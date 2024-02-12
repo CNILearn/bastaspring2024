@@ -50,6 +50,15 @@ YARP ist ein Open Source Reverse Proxy, der von Microsoft entwickelt wird. Viele
 
 [YARP slides](slides/yarp.pdf)
 
+### YARP Samples
+
+- YARP Essentials
+
+### YARP Links
+
+- [YARP](https://microsoft.github.io/reverse-proxy/)
+- [GitHub YARP](https://github.com/microsoft/reverse-proxy)
+
 ## Logs, metrics, distributed tracing and OpenTelemetry
 
 Donnerstag, 15. Februar 2024, 15:30-16:30, Platinum Ballsaal II
@@ -61,6 +70,12 @@ Grafana? Prometheus? Application Insights? OpenTelemetry? Am Beispiel einer vert
 [Telemetry slides](slides/telemetry.pdf)
 
 ### Telemetry samples
+
+- Logging
+- Metrics
+- Distributed tracing
+- .NET Aspire Dashboard
+- Prometheus, Grafana
 
 ## XAML-Clients mit WinUI, .NET MAUI, WPF, Uno Platform and Avalonia UI
 
