@@ -69,7 +69,13 @@ Grafana? Prometheus? Application Insights? OpenTelemetry? Am Beispiel einer vert
 
 [Telemetry slides](slides/telemetry.pdf)
 
-### Telemetry samples
+### Telemetry Samples
+
+- Logging
+- Metrics
+- Distributed tracing
+- .NET Aspire
+- Codebreaker with App Insights, Grafana, Prometheus, .NET Aspire dashboard
 
 - Logging
 - Metrics
