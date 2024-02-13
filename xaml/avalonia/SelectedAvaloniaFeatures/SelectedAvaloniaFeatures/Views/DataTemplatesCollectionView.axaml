@@ -1,0 +1,23 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:models="clr-namespace:SelectedAvaloniaFeatures.Models"
+             xmlns:vm="clr-namespace:SelectedAvaloniaFeatures.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="SelectedAvaloniaFeatures.Views.DataTemplatesCollectionView"
+             Classes="Page"
+             x:DataType="vm:DataTemplatesCollectionViewModel">
+    <UserControl.DataTemplates>
+        <DataTemplate x:DataType="{x:Type models:User}">
+            <StackPanel Orientation="Horizontal" Spacing="20">
+                <TextBlock Text="{Binding FirstName}" />
+                <TextBlock Text="{Binding LastName}" />
+                <TextBlock Text="{Binding Age}" />
+            </StackPanel>
+        </DataTemplate>
+    </UserControl.DataTemplates>
+
+    <models:User FirstName="Sebastian" LastName="Szvetecz" Age="25" />
+
+</UserControl>

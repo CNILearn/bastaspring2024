@@ -1,0 +1,40 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Classes="H1" Text="Example Heading h1" />
+                <TextBlock Classes="H2" Text="Example Heading h2" />
+                <TextBlock Classes="H3" Text="Example Heading h3" />
+                <TextBlock Classes="H4" Text="Example Heading h4" />
+                <TextBlock Classes="H5" Text="Example Heading h5" />
+            </StackPanel>
+        </Border>
+    </Design.PreviewWith>
+
+    <Style Selector="TextBlock.H1">
+        <Setter Property="FontSize" Value="28" />
+        <Setter Property="FontWeight" Value="Light" />
+        <Setter Property="Margin" Value="0,20,0,10" />
+    </Style>
+    <Style Selector="TextBlock.H2">
+        <Setter Property="FontSize" Value="26" />
+        <Setter Property="FontWeight" Value="Light" />
+        <Setter Property="Margin" Value="0,10,0,5" />
+    </Style>
+    <Style Selector="TextBlock.H3">
+        <Setter Property="FontSize" Value="24" />
+        <Setter Property="FontWeight" Value="Light" />
+        <Setter Property="Margin" Value="0,5,0,5" />
+    </Style>
+    <Style Selector="TextBlock.H4">
+        <Setter Property="FontSize" Value="22" />
+        <Setter Property="FontWeight" Value="Light" />
+        <Setter Property="Margin" Value="0,5,0,5" />
+    </Style>
+    <Style Selector="TextBlock.H5">
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="FontWeight" Value="Light" />
+        <Setter Property="Margin" Value="0,5,0,5" />
+    </Style>
+</Styles>

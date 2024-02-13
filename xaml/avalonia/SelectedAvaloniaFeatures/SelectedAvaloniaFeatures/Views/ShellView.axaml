@@ -1,0 +1,25 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:SelectedAvaloniaFeatures.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="SelectedAvaloniaFeatures.Views.ShellView">
+    <DockPanel>
+        <TextBlock Text="Selected Avalonia Features" DockPanel.Dock="Top" Classes="H1" Margin="13" />
+        <TabControl>
+            <TabItem Header="Grid">
+                <vm:GridViewModel />
+            </TabItem>
+            <TabItem Header="Data Templates Collection">
+                <vm:DataTemplatesCollectionViewModel />
+            </TabItem>
+            <TabItem Header="Binding">
+                <vm:BindingViewModel />
+            </TabItem>
+            <TabItem Header="CSS like styling">
+                <vm:CssLikeStylingViewModel />
+            </TabItem>
+        </TabControl>
+    </DockPanel>
+</UserControl>

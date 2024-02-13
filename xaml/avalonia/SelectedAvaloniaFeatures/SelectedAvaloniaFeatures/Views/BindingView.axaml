@@ -1,0 +1,66 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:SelectedAvaloniaFeatures.ViewModels"
+             xmlns:converter="clr-namespace:SelectedAvaloniaFeatures.Converter"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="SelectedAvaloniaFeatures.Views.BindingView"
+             Classes="Page"
+             x:DataType="vm:BindingViewModel">
+    <UserControl.Resources>
+        <converter:DoubleMultiplierConverter x:Key="DoubleMultiplierConverter" />
+    </UserControl.Resources>
+    <UserControl.Styles>
+        <Style Selector="StackPanel.BindingColumn TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+        <Style Selector="StackPanel.BindingColumn TextBlock:nth-child(1)">
+            <Setter Property="FontStyle" Value="Italic" />
+        </Style>
+        <Style Selector="StackPanel.BindingColumn TextBlock:nth-child(2)">
+            <Setter Property="FontSize" Value="25" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+    </UserControl.Styles>
+    <StackPanel Orientation="Vertical" Grid.Column="0">
+            
+        <UniformGrid Columns="3">
+            <StackPanel Classes="BindingColumn">
+                <TextBlock Text="Binding" />
+                <TextBlock Text="{Binding Count, Mode=OneWay}" />
+            </StackPanel>
+            <StackPanel Classes="BindingColumn">
+                <TextBlock Text="ReflectionBinding" />
+                <TextBlock Text="{ReflectionBinding Count, Mode=OneWay}" />
+            </StackPanel>
+            <StackPanel Classes="BindingColumn">
+                <TextBlock Text="CompiledBinding" />
+                <TextBlock Text="{CompiledBinding Count, Mode=OneWay}" />
+            </StackPanel>
+        </UniformGrid>
+
+        <UniformGrid Columns="3" Margin="0,20">
+            <StackPanel Classes="BindingColumn">
+                <TextBlock Text="Classic Converter" />
+                <TextBlock Text="{Binding Count, Mode=OneWay, Converter={StaticResource DoubleMultiplierConverter}}" />
+            </StackPanel>
+            <StackPanel Classes="BindingColumn">
+                <TextBlock Text="Func Converter A" />
+                <TextBlock Text="{Binding Count, Mode=OneWay, Converter={x:Static converter:NumberConverters.Double}}" />
+            </StackPanel>
+            <StackPanel Classes="BindingColumn">
+                <TextBlock Text="Func Converter B" />
+                <TextBlock Text="{Binding Count, Mode=OneWay, Converter={x:Static converter:NumberConverters.Triple}}" />
+            </StackPanel>
+        </UniformGrid>
+        
+        <!--Method-->
+        <Button Command="{Binding IncreaseCount}" Content="Increase via method" />
+        <Button Command="{Binding DecreaseCount}" Content="Decrease via method" />
+    
+        <!--Command-->
+        <Button Command="{Binding IncreaseCountV2Command}" Content="Increase via command" />
+        <Button Command="{Binding DecreaseCountV2Command}" Content="Decrease via command" />
+    </StackPanel>
+</UserControl>
