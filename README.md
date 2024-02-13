@@ -30,6 +30,8 @@ C# 12 ist released, an der nächsten Version von C# wird bereits gearbeitet. Mit
 - Interceptors
 - Native AOT
 
+[Professional C# Repo](https://github.com/ProfessionalCSharp/ProfessionalCSharp2021)
+
 ## HotChocolate: Ein Heißgetränk oder GraphQL-Backend mit .NET?
 
 Mittwoch, 14. Februar 2024, 15:15-16:15, Platinum Ballsaal II
