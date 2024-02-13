@@ -15,7 +15,7 @@ Christian Nagel
 
 C# 12 ist released, an der nächsten Version von C# wird bereits gearbeitet. Mit Primary Constructors und Collection Expressions kann der Code in allen .NET-Applikationen vereinfacht werden. Was dahinter steckt, was es sonst noch Neues in C# gibt, was mit Inline Arrays und Interceptors gemacht werden kann, und was in der nächsten Version von C# geplant ist, lernen Sie in dieser Session.
 
-[C# Slides](slides/csharp12.pdf)
+[C# 12 Slides](slides/CSharp12.pdf)
 
 ### C# Samples
 
