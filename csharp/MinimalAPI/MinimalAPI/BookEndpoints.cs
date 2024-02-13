@@ -1,7 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.OpenApi;
-using GetResults = System.Threading.Tasks.Task<Microsoft.AspNetCore.Http.HttpResults.Results<Microsoft.AspNetCore.Http.HttpResults.Ok<MinimalAPI.Book>, Microsoft.AspNetCore.Http.HttpResults.NotFound>>;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.EntityFrameworkCore;
+using OkAndNotFound = System.Threading.Tasks.Task<Microsoft.AspNetCore.Http.HttpResults.Results<Microsoft.AspNetCore.Http.HttpResults.Ok<MinimalAPI.Book>, Microsoft.AspNetCore.Http.HttpResults.NotFound>>;
 
 namespace MinimalAPI;
 
@@ -18,7 +17,7 @@ public static class BookEndpoints
         .WithName("GetAllBooks")
         .WithOpenApi();
 
-        group.MapGet("/{id}", async GetResults (int id, BooksContext db) =>
+        group.MapGet("/{id}", async OkAndNotFound (int id, BooksContext db) =>
         {
             return await db.Book.AsNoTracking()
                 .FirstOrDefaultAsync(model => model.Id == id)
