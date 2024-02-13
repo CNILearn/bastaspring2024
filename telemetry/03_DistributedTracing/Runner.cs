@@ -39,12 +39,6 @@ public class Runner
         };
 
         ActivitySource.AddActivityListener(_listener);
-
-        var _ = Task.Run(async () =>
-        {
-            await Task.Delay(2000);
-
-        });
     }    
 
     public void InfoMessage1()
