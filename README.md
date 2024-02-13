@@ -133,7 +133,7 @@ Es gibt einen .NET-Backend-Service für eine Spiele-App. Dazu bauen wir Clients 
 
 ## Minimal APIs, Docker und Azure Container Apps mit .NET Aspire
 
-Freitag, 16. Februar 2024, 8:30 - 16:30, Basalt WS
+Freitag, 16. Februar 2024, 8:30 - 16:30, Flint WS
 
 Christian Nagel, Sebastian Szvetecz
 
