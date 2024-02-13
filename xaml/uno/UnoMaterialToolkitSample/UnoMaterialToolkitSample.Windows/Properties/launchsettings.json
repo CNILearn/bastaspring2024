@@ -1,0 +1,10 @@
+{
+	"profiles": {
+		"UnoMaterialToolkitSample.Windows (Unpackaged)": {
+			"commandName": "Project"
+		},
+		"UnoMaterialToolkitSample.Windows (Package)": {
+			"commandName": "MsixPackage"
+		}
+	}
+}

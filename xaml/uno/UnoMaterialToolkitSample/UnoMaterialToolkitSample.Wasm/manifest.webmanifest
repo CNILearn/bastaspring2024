@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "UnoMaterialToolkitSample",
+  "display": "standalone",
+  "name": "UnoMaterialToolkitSample",
+  "short_name": "UnoMaterialToolkitSample",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}
