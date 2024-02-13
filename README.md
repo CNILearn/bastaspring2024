@@ -94,9 +94,8 @@ Es gibt einen .NET-Backend-Service für eine Spiele-App. Dazu bauen wir Clients 
   - [Codebreaker WinUI](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.WinUI)
 - .NET MAUI
   - .NET MAUI with MAUI Accelerator
- - [Codebreaker MAUI](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.MAUI)
+  - [Codebreaker MAUI](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.MAUI)
 - Uno Platform
-  - 
   - [Codebreaker Uno](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.Uno)
 - Avalonia UI
   - [Codebreaker Avalonia](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.Avalonia)
