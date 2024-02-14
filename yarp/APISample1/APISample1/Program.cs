@@ -33,6 +33,9 @@ app.MapGet("/headers", (HttpRequest request) =>
     // return TypedResults.Ok(info);
 });
 
+app.MapGet("/replace", () => TypedResults.Ok("Content from API"));
+app.MapGet("/api/version", () => TypedResults.Ok("V1 Server"));
+
 app.MapGet("/info", () => TypedResults.Ok("API-1"))
     .WithName("Info")
     .WithOpenApi();
