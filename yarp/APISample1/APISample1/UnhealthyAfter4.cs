@@ -8,7 +8,7 @@ public sealed class UnhealthyAfter4 : IHealthCheck
 
     public Task<HealthCheckResult> CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken = default)
     {
-        HealthCheckResult check = s_counter++ % 4 != 0 ? HealthCheckResult.Healthy("healthy") : HealthCheckResult.Unhealthy("unhealthy");
+        HealthCheckResult check = s_counter++ % 4 != 0 ? HealthCheckResult.Healthy("healthy 1") : HealthCheckResult.Unhealthy("unhealthy 1");
         return Task.FromResult(check);
     }
 }

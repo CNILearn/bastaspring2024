@@ -1,8 +1,6 @@
 using APISample1;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
-using WebSampleApp;
-using WebSampleApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,10 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<HealthSampleService>();
 builder.Services.AddHealthChecks()
-    .AddCheck<CustomHealthCheck>("health", HealthStatus.Unhealthy, ["live"])
-    .AddCheck<CustomReadyCheck>("ready", HealthStatus.Degraded, ["ready"]);
+    .AddCheck<UnhealthyAfter4>("health", HealthStatus.Unhealthy, ["ready", "live"]);
 
 var app = builder.Build();
 app.UseSwagger();
@@ -38,19 +34,9 @@ app.MapGet("/headers", (HttpRequest request) =>
 });
 
 app.MapGet("/replace", () => TypedResults.Ok("Content from API"));
-app.MapGet("/api/version", () => TypedResults.Ok("V1 Server"));
+app.MapGet("/api/version", () => TypedResults.Ok("V2 Server"));
 
-app.MapGet("/sethealthy", (HealthSampleService service) =>
-{
-    service.SetHealthy(true);
-});
-
-app.MapGet("/setsick", (HealthSampleService service) =>
-{
-    service.SetHealthy(false);
-});
-
-app.MapGet("/info", () => TypedResults.Ok($"API-1 {DateTime.Now}"))
+app.MapGet("/info", () => TypedResults.Ok("API-3"))
     .WithName("Info")
     .WithOpenApi();
 

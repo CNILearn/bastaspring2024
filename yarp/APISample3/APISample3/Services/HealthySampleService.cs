@@ -17,7 +17,7 @@ public sealed class HealthSampleService : IDisposable
             _timer = new(o =>
             {
                 _isReady = true;
-            }, null, TimeSpan.FromSeconds(5), Timeout.InfiniteTimeSpan);
+            }, null, TimeSpan.FromSeconds(10), Timeout.InfiniteTimeSpan);
         }
     }
 
