@@ -1,16 +1,23 @@
 ﻿
 int x = 1;
 
-One(x);
+// pass by value
+One(x);  // pass by value
 Console.WriteLine($"after one: {x}");
 
+// pass by reference
+// Two(x); // error, must use ref
 Two(ref x);
 Console.WriteLine($"after two: {x}");
 
-Three(x);
-Three(ref x);
-Three(in x);
+// pass by readonly reference
+Three(x);  // warning, should use in or ref
+Three(ref x); 
+Three(in x); 
 
+// pass by in reference
+Four(x);
+Four(ref x);  // warning - consider using in
 Four(in x);
 
 void One(int x)

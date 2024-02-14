@@ -15,7 +15,7 @@ Christian Nagel
 
 C# 12 ist released, an der nächsten Version von C# wird bereits gearbeitet. Mit Primary Constructors und Collection Expressions kann der Code in allen .NET-Applikationen vereinfacht werden. Was dahinter steckt, was es sonst noch Neues in C# gibt, was mit Inline Arrays und Interceptors gemacht werden kann, und was in der nächsten Version von C# geplant ist, lernen Sie in dieser Session.
 
-[C# Slides](slides/csharp12.pdf)
+[C# 12 Slides](slides/CSharp12.pdf)
 
 ### C# Samples
 
@@ -30,6 +30,8 @@ C# 12 ist released, an der nächsten Version von C# wird bereits gearbeitet. Mit
 - Interceptors
 - Native AOT
 
+[Professional C# Repo](https://github.com/ProfessionalCSharp/ProfessionalCSharp2021)
+
 ## HotChocolate: Ein Heißgetränk oder GraphQL-Backend mit .NET?
 
 Mittwoch, 14. Februar 2024, 15:15-16:15, Platinum Ballsaal II
@@ -38,7 +40,7 @@ Sebastian Szvetecz
 
 Alle Liebhaber:innen heißer Schokolade bzw. Kakao muss ich jetzt leider enttäuschen. HotChocolate ist in diesem Kontext kein Heißgetränk, sondern ein GraphQL-Backend für .NET-Entwickler:innen. GraphQL ist eine Abfragesprache für APIs, gilt als DER Gegner von REST und wird unter anderem von Facebook, GitHub und Pinterest verwendet. In dieser Session werden wir noch genauer aufarbeiten, was GraphQL ist und warum es ein würdiger Gegner von REST ist. Außerdem werden wir uns ansehen wie einfach man mit ASP.NET Core und HotChocolate ein GraphQL API umsetzen kann. Unser GraphQL API soll nicht nur mit Hilfe von Entity Framework Core auf eine Datenkbank zugreifen, sie soll dem Client auch ermöglichen, Daten zu filtern, zu sortieren und zu paginieren, um einen möglichst flexiblen Datenzugriff zu ermöglichen. Filtern, Sortieren und Paginieren – klingt aufwendig? Nein, nicht mit HotChocolate. Aber auch für fortgeschrittenere Szenarien wie z. B. langsame Teilabfragen ist man mit HotChocolate gerüstet.
 
-[Hot chocolate slides](slides/hotchocolate.pdf)
+[Hot chocolate slides](slides/HotChocolate.pdf)
 
 ## YARP - Yet Another Reverse Proxy
 
@@ -107,9 +109,8 @@ Es gibt einen .NET-Backend-Service für eine Spiele-App. Dazu bauen wir Clients 
   - [Codebreaker WinUI](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.WinUI)
 - .NET MAUI
   - .NET MAUI with MAUI Accelerator
- - [Codebreaker MAUI](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.MAUI)
+  - [Codebreaker MAUI](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.MAUI)
 - Uno Platform
-  - 
   - [Codebreaker Uno](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.Uno)
 - Avalonia UI
   - [Codebreaker Avalonia](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.Avalonia)
@@ -147,7 +148,7 @@ Es gibt einen .NET-Backend-Service für eine Spiele-App. Dazu bauen wir Clients 
 
 ## Minimal APIs, Docker und Azure Container Apps mit .NET Aspire
 
-Freitag, 16. Februar 2024, 8:30 - 16:30, Basalt WS
+Freitag, 16. Februar 2024, 8:30 - 16:30, Flint WS
 
 Christian Nagel, Sebastian Szvetecz
 

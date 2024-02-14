@@ -9,27 +9,24 @@ using Microsoft.Extensions.Hosting;
 
 using System.Text.Json;
 
-using var host = Host.CreateDefaultBuilder(args)
-    .ConfigureLogging(logging =>
-    {
-        logging.AddJsonConsole(config =>
-        {
-            config.JsonWriterOptions = new JsonWriterOptions() { Indented = true };
-        });
-        logging.SetMinimumLevel(LogLevel.Trace);
-    })
-    .ConfigureServices((context, services) =>
-    {
-        string connectionString = context.Configuration.GetConnectionString("BooksConnection") ?? throw new InvalidOperationException("Missing BooksConnection");
-        services.AddDbContextFactory<BooksContext>(options =>
-        {
-            options.UseSqlServer(connectionString);
-        });
-        services.AddTransient<Runner>();
-    })
-    .Build();
+var builder = Host.CreateApplicationBuilder(args);
+builder.Logging.AddJsonConsole(config =>
+{
+    config.JsonWriterOptions = new JsonWriterOptions() { Indented = true };
+});
+builder.Logging.SetMinimumLevel(LogLevel.Trace);
 
-var runner = host.Services.GetRequiredService<Runner>();
+builder.Services.AddDbContextFactory<BooksContext>(options =>
+{
+    string connectionString = builder.Configuration.GetConnectionString("BooksConnection") ?? throw new InvalidOperationException("Missing BooksConnection from configuration");
+
+    options.UseSqlServer(connectionString);
+});
+builder.Services.AddTransient<Runner>();
+
+using var app = builder.Build();
+
+var runner = app.Services.GetRequiredService<Runner>();
 
 for (int i = 0; i < 200; i++)
 {
