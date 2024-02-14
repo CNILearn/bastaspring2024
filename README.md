@@ -50,7 +50,7 @@ Christian Nagel
 
 YARP ist ein Open Source Reverse Proxy, der von Microsoft entwickelt wird. Viele Funktionalitäten können von Services zu diesem Proxy ausgelagert werden. Transformation von Requests, ein Wechsel des Protokolls, Load Balancing, Rate Limiting, Authentication und Authorization und vieles mehr sind Features dieses Proxys. In dieser Session lernen Sie, wie Sie YARP in On-Premises- als auch in Cloud-Szenarien einsetzen können.
 
-[YARP slides](slides/yarp.pdf)
+[YARP slides](slides/YARP.pdf)
 
 ### YARP Samples
 
@@ -69,7 +69,7 @@ Christian Nagel
 
 Grafana? Prometheus? Application Insights? OpenTelemetry? Am Beispiel einer verteilten Lösung, die sowohl on Premises als auch mit Azure Cloud Services läuft, sehen Sie wie Log, Metrics, und Distributed Tracing mit .NET-Applikationen implementiert und die Daten mit Grafana und Prometheus sowie Azure Services wie Azure Monitor, Log Analytics und Application Insights ausgewertet werden können.
 
-[Telemetry slides](slides/telemetry.pdf)
+[Telemetry slides](slides/Telemetry.pdf)
 
 ### Telemetry Samples
 
@@ -78,12 +78,6 @@ Grafana? Prometheus? Application Insights? OpenTelemetry? Am Beispiel einer vert
 - Distributed tracing
 - .NET Aspire
 - Codebreaker with App Insights, Grafana, Prometheus, .NET Aspire dashboard
-
-- Logging
-- Metrics
-- Distributed tracing
-- .NET Aspire Dashboard
-- Prometheus, Grafana
 
 ## XAML-Clients mit WinUI, .NET MAUI, WPF, Uno Platform and Avalonia UI
 
