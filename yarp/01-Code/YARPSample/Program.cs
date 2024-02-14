@@ -3,21 +3,34 @@ using Yarp.ReverseProxy.Configuration;
 var builder = WebApplication.CreateBuilder(args);
 
 IReadOnlyList<RouteConfig> routes = 
-    [
-       // new RouteConfig { RouteId ="First", ClusterId = "cluster1", Match = new RouteMatch() { Path= "{**catch-all}" } }
-       new RouteConfig { RouteId ="First", ClusterId = "cluster1", Match = new RouteMatch() { Path= "/weatherforecast" } }
-    ];
+[
+    new() 
+    { 
+        RouteId ="route1", 
+        ClusterId = "cluster1", 
+        Match = new() { Path= "{**catch-all}" } 
+    }
+    //new() 
+    //{ 
+    //    RouteId ="route1", 
+    //    ClusterId = "cluster1", 
+    //    Match = new() 
+    //    { 
+    //        Path= "/weatherforecast" 
+    //    } 
+    //}
+];
 IReadOnlyList<ClusterConfig> clusters =
-    [
-        new ClusterConfig() 
+[
+    new() 
+    {
+        ClusterId = "cluster1",
+        Destinations = new Dictionary<string, DestinationConfig>() 
         {
-            ClusterId = "cluster1",
-            Destinations = new Dictionary<string, DestinationConfig>() 
-            {
-                { "first", new DestinationConfig() { Address = "http://localhost:5295"} }
-            }
+            { "first", new DestinationConfig { Address = "http://localhost:5300"} }
         }
-    ];
+    }
+];
 
 builder.Services.AddReverseProxy()
     .LoadFromMemory(routes, clusters);
@@ -25,6 +38,5 @@ builder.Services.AddReverseProxy()
 var app = builder.Build();
 
 app.MapReverseProxy();
-
 
 app.Run();

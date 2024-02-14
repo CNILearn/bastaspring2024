@@ -1,3 +1,7 @@
+using APISample1;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,19 +9,38 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddHealthChecks()
+    .AddCheck<UnhealthyAfter4>("health", HealthStatus.Unhealthy, ["ready", "live"]);
+
 var app = builder.Build();
+app.UseSwagger();
+app.UseSwaggerUI();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+app.MapHealthChecks("/live", new HealthCheckOptions()
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    Predicate = check => check.Tags.Contains("live")
+});
 
-var summaries = new[]
+app.MapHealthChecks("/ready"); // all checks
+
+app.MapGet("/headers", (HttpRequest request) => 
 {
+    var info = request.Headers
+    .Select(h => new HeaderInfo(h.Key, h.Value.ToString()))
+    .ToArray();
+
+    return TypedResults.Ok(request.Headers);
+    // return TypedResults.Ok(info);
+});
+
+app.MapGet("/info", () => TypedResults.Ok("API-1"))
+    .WithName("Info")
+    .WithOpenApi();
+
+string[] summaries =
+[
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+];
 
 app.MapGet("/weatherforecast", () =>
 {
@@ -40,3 +63,5 @@ internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }
+
+internal record HeaderInfo(string Key, string Value);
