@@ -55,10 +55,14 @@ YARP ist ein Open Source Reverse Proxy, der von Microsoft entwickelt wird. Viele
 ### YARP Samples
 
 - YARP Essentials
+- Config and code
+- Transform
+- Load balancing
+- Health checking
 
 ### YARP Links
 
-- [YARP](https://microsoft.github.io/reverse-proxy/)
+- [YARP](https://microsoft.github.io/reverse-proxy/?WT.mc_id=DT-MVP-10160)
 - [GitHub YARP](https://github.com/microsoft/reverse-proxy)
 
 ## Logs, metrics, distributed tracing and OpenTelemetry
@@ -78,6 +82,15 @@ Grafana? Prometheus? Application Insights? OpenTelemetry? Am Beispiel einer vert
 - Distributed tracing
 - .NET Aspire
 - Codebreaker with App Insights, Grafana, Prometheus, .NET Aspire dashboard
+
+## Telemetry links
+
+- [Open Telemetry](https://opentelemetry.io)
+- [Logging in C#](https://learn.microsoft.com/en-us/dotnet/core/extensions/logging?WT.mc_id=DT-MVP-10160)
+- [Collect metrics](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/metrics-collection?WT.mc_id=DT-MVP-10160)
+- [.NET Distributed Tracing](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/distributed-tracing?WT.mc_id=DT-MVP-10160)
+- [Codebreaker org](https://github.com/codebreakerapp)
+- [Pragmatic Microsservices with C# and Azure Repo](https://github.com/PacktPublishing/Pragmatic-Microservices-with-CSharp-and-Azure)
 
 ## XAML-Clients mit WinUI, .NET MAUI, WPF, Uno Platform and Avalonia UI
 
