@@ -94,7 +94,7 @@ Grafana? Prometheus? Application Insights? OpenTelemetry? Am Beispiel einer vert
 
 ## XAML-Clients mit WinUI, .NET MAUI, WPF, Uno Platform and Avalonia UI
 
-Donnerstag, 15. Februar 2024, 17:00-18:00, Platinum Ballsaal I
+Donnerstag, 15. Februar 2024, 17:00-18:00, Platinum Ballsaal II
 
 Sebastian Szvetecz, Christian Nagel
 
