@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "UnoMauiIntegration",
+  "display": "standalone",
+  "name": "UnoMauiIntegration",
+  "short_name": "UnoMauiIntegration",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}
