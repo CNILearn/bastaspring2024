@@ -1,0 +1,10 @@
+{
+	"profiles": {
+		"UnoMauiIntegration.Windows (Unpackaged)": {
+			"commandName": "Project"
+		},
+		"UnoMauiIntegration.Windows (Package)": {
+			"commandName": "MsixPackage"
+		}
+	}
+}

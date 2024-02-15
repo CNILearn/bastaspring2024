@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ShellMixedSample.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ShellMixedSample"
+    xmlns:pages="clr-namespace:ShellMixedSample.Pages"
+    Shell.FlyoutBehavior="Flyout">
+
+    <FlyoutItem Title="Flyout One" FlyoutIcon="{StaticResource IconOne}">
+        <ShellContent
+            Title="One"
+            ContentTemplate="{DataTemplate pages:MainPage}"
+            Route="FirstPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Flyout Two" FlyoutIcon="{StaticResource IconTwo}">
+        <Tab Title="Tab 1" Icon="{StaticResource IconOne}">
+            <ShellContent
+                Title="One"
+                ContentTemplate="{DataTemplate pages:Tab1Page}"
+                Route="Tab1">
+            </ShellContent>
+        </Tab>
+        <Tab Title="Tab 2" Icon="{StaticResource IconTwo}">
+            <ShellContent
+                Title="Two"
+                ContentTemplate="{DataTemplate pages:MainPage}"
+                Route="Tab2" />
+        </Tab>
+        <Tab Title="Tab 3" Icon="{StaticResource IconThree}">
+            <ShellContent
+                Title="Three"
+                ContentTemplate="{DataTemplate pages:MainPage}"
+                Route="Tab3" />
+        </Tab>
+        <Tab Title="Tab 4" Icon="{StaticResource IconFour}">
+            <ShellContent
+                Title="Four"
+                ContentTemplate="{DataTemplate pages:MainPage}"
+                Route="Tab4" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Flyout Three" FlyoutIcon="{StaticResource IconThree}">
+        <ShellContent
+            Title="Three"
+            ContentTemplate="{DataTemplate pages:Flyout3Page}"
+            Route="ThirdPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Flyout Four" FlyoutIcon="{StaticResource IconFour}">
+        <ShellContent
+            Title="Four"
+            ContentTemplate="{DataTemplate pages:Flyout4Page}"
+            Route="FourthPage" />
+    </FlyoutItem>
+
+</Shell>
