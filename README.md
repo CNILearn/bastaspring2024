@@ -15,7 +15,7 @@ Christian Nagel
 
 C# 12 ist released, an der nächsten Version von C# wird bereits gearbeitet. Mit Primary Constructors und Collection Expressions kann der Code in allen .NET-Applikationen vereinfacht werden. Was dahinter steckt, was es sonst noch Neues in C# gibt, was mit Inline Arrays und Interceptors gemacht werden kann, und was in der nächsten Version von C# geplant ist, lernen Sie in dieser Session.
 
-[C# Slides](slides/csharp12.pdf)
+[C# 12 Slides](slides/CSharp12.pdf)
 
 ### C# Samples
 
@@ -30,6 +30,8 @@ C# 12 ist released, an der nächsten Version von C# wird bereits gearbeitet. Mit
 - Interceptors
 - Native AOT
 
+[Professional C# Repo](https://github.com/ProfessionalCSharp/ProfessionalCSharp2021)
+
 ## HotChocolate: Ein Heißgetränk oder GraphQL-Backend mit .NET?
 
 Mittwoch, 14. Februar 2024, 15:15-16:15, Platinum Ballsaal II
@@ -38,7 +40,7 @@ Sebastian Szvetecz
 
 Alle Liebhaber:innen heißer Schokolade bzw. Kakao muss ich jetzt leider enttäuschen. HotChocolate ist in diesem Kontext kein Heißgetränk, sondern ein GraphQL-Backend für .NET-Entwickler:innen. GraphQL ist eine Abfragesprache für APIs, gilt als DER Gegner von REST und wird unter anderem von Facebook, GitHub und Pinterest verwendet. In dieser Session werden wir noch genauer aufarbeiten, was GraphQL ist und warum es ein würdiger Gegner von REST ist. Außerdem werden wir uns ansehen wie einfach man mit ASP.NET Core und HotChocolate ein GraphQL API umsetzen kann. Unser GraphQL API soll nicht nur mit Hilfe von Entity Framework Core auf eine Datenkbank zugreifen, sie soll dem Client auch ermöglichen, Daten zu filtern, zu sortieren und zu paginieren, um einen möglichst flexiblen Datenzugriff zu ermöglichen. Filtern, Sortieren und Paginieren – klingt aufwendig? Nein, nicht mit HotChocolate. Aber auch für fortgeschrittenere Szenarien wie z. B. langsame Teilabfragen ist man mit HotChocolate gerüstet.
 
-[Hot chocolate slides](slides/hotchocolate.pdf)
+[Hot chocolate slides](slides/HotChocolate.pdf)
 
 ## YARP - Yet Another Reverse Proxy
 
@@ -48,7 +50,20 @@ Christian Nagel
 
 YARP ist ein Open Source Reverse Proxy, der von Microsoft entwickelt wird. Viele Funktionalitäten können von Services zu diesem Proxy ausgelagert werden. Transformation von Requests, ein Wechsel des Protokolls, Load Balancing, Rate Limiting, Authentication und Authorization und vieles mehr sind Features dieses Proxys. In dieser Session lernen Sie, wie Sie YARP in On-Premises- als auch in Cloud-Szenarien einsetzen können.
 
-[YARP slides](slides/yarp.pdf)
+[YARP slides](slides/YARP.pdf)
+
+### YARP Samples
+
+- YARP Essentials
+- Config and code
+- Transform
+- Load balancing
+- Health checking
+
+### YARP Links
+
+- [YARP](https://microsoft.github.io/reverse-proxy/?WT.mc_id=DT-MVP-10160)
+- [GitHub YARP](https://github.com/microsoft/reverse-proxy)
 
 ## Logs, metrics, distributed tracing and OpenTelemetry
 
@@ -58,13 +73,28 @@ Christian Nagel
 
 Grafana? Prometheus? Application Insights? OpenTelemetry? Am Beispiel einer verteilten Lösung, die sowohl on Premises als auch mit Azure Cloud Services läuft, sehen Sie wie Log, Metrics, und Distributed Tracing mit .NET-Applikationen implementiert und die Daten mit Grafana und Prometheus sowie Azure Services wie Azure Monitor, Log Analytics und Application Insights ausgewertet werden können.
 
-[Telemetry slides](slides/telemetry.pdf)
+[Telemetry slides](slides/Telemetry.pdf)
 
-### Telemetry samples
+### Telemetry Samples
+
+- Logging
+- Metrics
+- Distributed tracing
+- .NET Aspire
+- Codebreaker with App Insights, Grafana, Prometheus, .NET Aspire dashboard
+
+## Telemetry links
+
+- [Open Telemetry](https://opentelemetry.io)
+- [Logging in C#](https://learn.microsoft.com/en-us/dotnet/core/extensions/logging?WT.mc_id=DT-MVP-10160)
+- [Collect metrics](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/metrics-collection?WT.mc_id=DT-MVP-10160)
+- [.NET Distributed Tracing](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/distributed-tracing?WT.mc_id=DT-MVP-10160)
+- [Codebreaker org](https://github.com/codebreakerapp)
+- [Pragmatic Microsservices with C# and Azure Repo](https://github.com/PacktPublishing/Pragmatic-Microservices-with-CSharp-and-Azure)
 
 ## XAML-Clients mit WinUI, .NET MAUI, WPF, Uno Platform and Avalonia UI
 
-Donnerstag, 15. Februar 2024, 17:00-18:00, Platinum Ballsaal I
+Donnerstag, 15. Februar 2024, 17:00-18:00, Platinum Ballsaal II
 
 Sebastian Szvetecz, Christian Nagel
 
@@ -86,9 +116,8 @@ Es gibt einen .NET-Backend-Service für eine Spiele-App. Dazu bauen wir Clients 
   - [Codebreaker WinUI](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.WinUI)
 - .NET MAUI
   - .NET MAUI with MAUI Accelerator
- - [Codebreaker MAUI](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.MAUI)
+  - [Codebreaker MAUI](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.MAUI)
 - Uno Platform
-  - 
   - [Codebreaker Uno](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.Uno)
 - Avalonia UI
   - [Codebreaker Avalonia](https://github.com/CodebreakerApp/Codebreaker.Xaml/tree/main/src/Codebreaker.Avalonia)
@@ -126,7 +155,7 @@ Es gibt einen .NET-Backend-Service für eine Spiele-App. Dazu bauen wir Clients 
 
 ## Minimal APIs, Docker und Azure Container Apps mit .NET Aspire
 
-Freitag, 16. Februar 2024, 8:30 - 16:30, Basalt WS
+Freitag, 16. Februar 2024, 8:30 - 16:30, Flint WS
 
 Christian Nagel, Sebastian Szvetecz
 
