@@ -161,4 +161,8 @@ Christian Nagel, Sebastian Szvetecz
 
 .NET Aspire ist Microsoft's .NET cloud ready stack der es erleichtert eine Lösung basierend auf Microservices zu entwickeln. .NET Aspire bietet Tools, Komponenten, und Orchestration für .NET. In diesem Workshop werden bestehende Clients genutzt. Das Backend wird mit Unterstützung von .NET Aspire gebaut. Damit lernen Sie Azure Services wie Azure Container Apps, Cosmos DB, Log Analytics und Application Insights kennen, sehen die Funktionalität die .NET Aspire anbietet, und können die Lösung auch ohne Azure Services in einer Docker Landschaft On-Premises betreiben.
 
-See [Codebreakerlight](https://github.com/codebreakerapp/codebreakerlight)
+[Microservices Workshop Slides](slides/WorkshopMicroservices.md)
+
+See [Codebreakerlight](https://github.com/codebreakerapp/codebreakerlight) for instructions
+
+See [Pragmatic Microservices with .NET and Azure](https://github.com/PacktPublishing/Pragmatic-Microservices-with-CSharp-and-Azure) for the source code
